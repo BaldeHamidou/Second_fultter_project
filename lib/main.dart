@@ -25,7 +25,9 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      // home: MyHomePage(title: 'Flutter Demo Home Page'),
+      //home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: _randomColorListview,
+      /*
       home: ListView(
         children: [
           for (var i = 0; i < 30; i++)
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
         ],
-      ),
+      ),*/
     );
   }
 }
@@ -126,3 +128,18 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+/* *************************************************************************************************************** */
+/* ***********************************************  PERSONAL WIDGET ***********************************************/
+Widget _randomColorListview = ListView(
+  children: [
+    for (var i = 0; i < 30; i++)
+      LimitedBox(
+        maxHeight: 200,
+        child: Container(
+          //color:
+          color: Color(Random().nextInt(0xffffffff)),
+        ),
+      ),
+  ],
+);
