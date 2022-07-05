@@ -56,12 +56,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_randomcolor",
-      "rootUri": "file:///c:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_randomcolor-1.0.12",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter_test",
       "rootUri": "file:///c:/src/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -146,7 +140,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2022-06-28T23:10:00.411633Z",
+  "generated": "2022-07-05T19:22:14.042314Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }

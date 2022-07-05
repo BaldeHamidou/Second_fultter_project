@@ -1,7 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_randomcolor/flutter_randomcolor.dart';
+import 'resources/filetwo.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: _randomColorListview,
+      home: RandomColorListview2(),
     );
   }
 }
@@ -118,15 +116,4 @@ class _MyHomePageState extends State<MyHomePage> {
 
 /* *************************************************************************************************************** */
 /* ***********************************************  PERSONAL WIDGET ***********************************************/
-Widget _randomColorListview = ListView(
-  children: [
-    for (var i = 0; i < 30; i++)
-      LimitedBox(
-        maxHeight: 200,
-        child: Container(
-          //color:
-          color: Color(Random().nextInt(0xffffffff)),
-        ),
-      ),
-  ],
-);
+
